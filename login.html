@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Haven | Honda VIP Club Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition-curtain"></div>
+    <nav>
+        <a href="index.html" class="logo">AUTO <span>HAVEN</span> <small style="font-size:0.72rem; color:var(--gold); letter-spacing:1.5px; margin-left:4px;">HONDA</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs ↗</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact ↗</a>
+            <a href="login.html" id="navLoginLink" class="nav-login-btn active">VIP Login</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="section-header">
+            <div class="luxury-badge">Honda Owners & Buyers</div>
+            <h2>Honda VIP Club Portal</h2>
+            <p>Sign in to track your Honda booking ID, manage installment plans, and schedule service.</p>
+        </div>
+
+        <div class="glass-panel">
+            <form id="loginForm" onsubmit="handleAuthSubmit(event)">
+                <div class="form-group">
+                    <label for="loginName">Customer Name</label>
+                    <input type="text" id="loginName" placeholder="Ikrash" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="ikrash@autohaven.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-bottom: 14px;">Sign In to Honda VIP Club</button>
+                <button type="button" class="btn-outline" style="width: 100%;" onclick="logoutUser()">Sign Out / Reset Session</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs (New Tab)</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact Concierge (New Tab)</a>
+            <a href="login.html">VIP Login</a>
+        </div>
+        <p>© 2026 Auto Haven | Exclusive Honda Dealership • Crafted by Ikrash (i263170 - SE D)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
