@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Haven | Honda VIP Concierge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition-curtain"></div>
+    <nav>
+        <a href="index.html" class="logo">AUTO <span>HAVEN</span> <small style="font-size:0.72rem; color:var(--gold); letter-spacing:1.5px; margin-left:4px;">HONDA</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs ↗</a>
+            <a href="contact.html" target="_blank" rel="noopener" class="active">Contact ↗</a>
+            <a href="login.html" id="navLoginLink" class="nav-login-btn">VIP Login</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="section-header">
+            <div class="luxury-badge">Honda VIP Concierge</div>
+            <h2>Book a Honda Test Drive or Quote</h2>
+            <p>Become a Honda customer today—schedule a showroom visit or doorstep test drive.</p>
+        </div>
+
+        <div class="glass-panel">
+            <form id="vipForm" onsubmit="submitInquiry(event)">
+                <div class="form-group">
+                    <label for="fullName">Customer Full Name</label>
+                    <input type="text" id="fullName" placeholder="e.g., Ikrash" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" placeholder="ikrash@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferredModel">Select Honda Model</label>
+                    <select id="preferredModel">
+                        <option value="2026 Honda Civic RS">2026 Honda Civic RS (PKR 1.01 Crore)</option>
+                        <option value="2026 Honda Civic Oriel">2026 Honda Civic Oriel (PKR 88.34 Lacs)</option>
+                        <option value="2026 Honda HR-V e:HEV">2026 Honda HR-V e:HEV Hybrid (PKR 92.99 Lacs)</option>
+                        <option value="2026 Honda HR-V VTi-S">2026 Honda HR-V VTi-S (PKR 72.99 Lacs)</option>
+                        <option value="2026 Honda City Aspire S">2026 Honda City Aspire S (PKR 61.49 Lacs)</option>
+                        <option value="2026 Honda BR-V i-VTEC S">2026 Honda BR-V i-VTEC S (PKR 64.29 Lacs)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Preferred City / Delivery Notes (Optional)</label>
+                    <textarea id="notes" rows="3" placeholder="e.g., Islamabad Blue Area showroom or home test drive..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Confirm Honda VIP Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs (New Tab)</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact Concierge (New Tab)</a>
+            <a href="login.html">VIP Login</a>
+        </div>
+        <p>© 2026 Auto Haven | Exclusive Honda Dealership • Crafted by Ikrash (i263170 - SE D)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
