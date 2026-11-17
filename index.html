@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Haven | Exclusive 2026 Honda Dealership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition-curtain"></div>
+    <nav>
+        <a href="index.html" class="logo">AUTO <span>HAVEN</span> <small style="font-size:0.72rem; color:var(--gold); letter-spacing:1.5px; margin-left:4px;">HONDA</small></a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs ↗</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact ↗</a>
+            <a href="login.html" id="navLoginLink" class="nav-login-btn">VIP Login</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="luxury-badge">★ Official 2026 Honda Exclusive Showcase</div>
+        <h1>The Power of Dreams, Perfected.</h1>
+        <p>Become a proud Honda owner today. Explore the 2026 Honda Civic RS Turbo, Honda HR-V e:HEV Hybrid, Honda City Aspire S, and Honda BR-V—with instant priority booking and bespoke financing.</p>
+        
+        <div class="hero-media">
+            <img src="images/car1.jpg" alt="2026 Honda Flagship Showcase">
+        </div>
+
+        <div class="hero-actions">
+            <button class="btn-primary" onclick="openBuyModal('2026 Honda Civic RS (1.5L VTEC Turbo)', 'PKR 1.01 Crore')">Buy Honda Now</button>
+            <a href="gallery.html" class="btn-outline">Explore All Honda Models</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>2026 Honda Flagship Lineup</h2>
+            <p>Factory-certified Honda vehicles with immediate booking and white-glove delivery.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-img-wrap">
+                    <span class="card-tag">176 HP Turbo</span>
+                    <img src="images/car1.jpg" alt="2026 Honda Civic RS">
+                </div>
+                <h3>2026 Honda Civic RS</h3>
+                <div class="price">PKR 84.99 Lacs – 1.01 Crore</div>
+                <p>1498cc VTEC Turbocharged engine (176 HP), Honda Sensing safety suite, paddle shifters, and RS aero styling.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda Civic RS', 'PKR 1.01 Crore')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Test Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <span class="card-tag">21.5 km/l Hybrid</span>
+                    <img src="images/car2.jpg" alt="2026 Honda HR-V e:HEV">
+                </div>
+                <h3>2026 Honda HR-V e:HEV</h3>
+                <div class="price">PKR 72.99 – 92.99 Lacs</div>
+                <p>Dual-motor e:HEV hybrid SUV with EV, Hybrid & Engine drive modes, 6 airbags, and Honda Sensing.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda HR-V e:HEV', 'PKR 92.99 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Test Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <span class="card-tag">Best Seller</span>
+                    <img src="images/car3.jpg" alt="2026 Honda City Aspire S">
+                </div>
+                <h3>2026 Honda City Aspire S</h3>
+                <div class="price">PKR 47.37 – 61.49 Lacs</div>
+                <p>1.5L i-VTEC CVT executive sedan with LED headlights, 9-inch smart cockpit, cruise control, and 15–17 km/l economy.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda City Aspire S', 'PKR 61.49 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Test Drive ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>2026 Honda Technical Comparison</h2>
+            <p>Compare official specifications and ex-factory pricing across the Honda lineup.</p>
+        </div>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Honda Model</th>
+                        <th>Category</th>
+                        <th>Engine / System</th>
+                        <th>Power Output</th>
+                        <th>Fuel Economy</th>
+                        <th>Ex-Factory Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Honda City 1.5L Aspire S</strong></td>
+                        <td>5-Seater Sedan</td>
+                        <td>1497cc i-VTEC CVT</td>
+                        <td>118 HP</td>
+                        <td>15 – 17 km/l</td>
+                        <td>PKR 61.49 Lacs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Honda BR-V i-VTEC S</strong></td>
+                        <td>7-Seater Family MPV</td>
+                        <td>1497cc i-VTEC CVT</td>
+                        <td>118 HP</td>
+                        <td>13 km/l</td>
+                        <td>PKR 64.29 Lacs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Honda HR-V e:HEV</strong></td>
+                        <td>5-Seater Hybrid SUV</td>
+                        <td>1498cc Dual-Motor Hybrid</td>
+                        <td>131 PS (Motor)</td>
+                        <td>21.5 km/l</td>
+                        <td>PKR 92.99 Lacs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Honda Civic RS</strong></td>
+                        <td>Executive Sports Sedan</td>
+                        <td>1498cc VTEC Turbo</td>
+                        <td>176 HP</td>
+                        <td>12.5 – 14 km/l</td>
+                        <td>PKR 1.01 Crore</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>Honda Easy Finance Estimator</h2>
+            <p>Calculate your customized monthly installment plan for any 2026 Honda vehicle.</p>
+        </div>
+        
+        <div class="glass-panel">
+            <div class="form-group">
+                <label for="carSelect">Select Your Honda Model</label>
+                <select id="carSelect">
+                    <option value="4737000">Honda City 1.2L LS (PKR 4,737,000)</option>
+                    <option value="6149000" selected>Honda City 1.5L Aspire S (PKR 6,149,000)</option>
+                    <option value="6429000">Honda BR-V i-VTEC S 7-Seater (PKR 6,429,000)</option>
+                    <option value="9299000">Honda HR-V e:HEV Hybrid (PKR 9,299,000)</option>
+                    <option value="10100000">Honda Civic RS 1.5L Turbo (PKR 10,100,000)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="downPayment">Down Payment (%)</label>
+                <input type="number" id="downPayment" value="30" min="10" max="90">
+            </div>
+            <div class="form-group">
+                <label for="tenure">Installment Tenure</label>
+                <select id="tenure">
+                    <option value="36">36 Months (3 Years)</option>
+                    <option value="60" selected>60 Months (5 Years)</option>
+                </select>
+            </div>
+            <button class="btn-primary" style="width: 100%;" onclick="calculateInstallment()">Calculate Honda Monthly Plan</button>
+            <div class="calc-result" id="emiOutput">Estimated Monthly Plan: PKR 99,572 / month</div>
+        </div>
+    </section>
+
+    <div class="modal-backdrop" id="buyModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeBuyModal()">×</button>
+            <div class="luxury-badge" style="margin-bottom: 12px;">Honda Priority Booking</div>
+            <h3 id="modalCarName" style="font-size: 1.45rem; margin-bottom: 4px;">Honda Model</h3>
+            <p id="modalCarPrice" style="color: var(--accent); font-weight: 800; margin-bottom: 20px;">PKR 0</p>
+            <form id="buyForm" onsubmit="confirmPurchase(event)">
+                <div class="form-group">
+                    <label for="buyerName">Customer Full Name</label>
+                    <input type="text" id="buyerName" placeholder="Ikrash" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyerPhone">Phone / WhatsApp Number</label>
+                    <input type="tel" id="buyerPhone" placeholder="+92 300 1234567" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Confirm Honda Buy Now Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs (New Tab)</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact Concierge (New Tab)</a>
+            <a href="login.html">VIP Login</a>
+        </div>
+        <p>© 2026 Auto Haven | Exclusive Honda Dealership • Crafted by Ikrash (i263170 - SE D)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
