@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Haven | 2026 Honda Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-transition-curtain"></div>
+    <nav>
+        <a href="index.html" class="logo">AUTO <span>HAVEN</span> <small style="font-size:0.72rem; color:var(--gold); letter-spacing:1.5px; margin-left:4px;">HONDA</small></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs ↗</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact ↗</a>
+            <a href="login.html" id="navLoginLink" class="nav-login-btn">VIP Login</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="section-header">
+            <div class="luxury-badge">Official Honda Showroom</div>
+            <h2>Explore All 2026 Honda Vehicles</h2>
+            <p>Filter by Sedans, SUVs & Crossovers, or Hybrid models to reserve yours today.</p>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterVehicles('all', this)">All Honda Models</button>
+            <button class="filter-btn" onclick="filterVehicles('sedan', this)">Honda Sedans (Civic & City)</button>
+            <button class="filter-btn" onclick="filterVehicles('suv', this)">Honda SUVs & Hybrids (HR-V & BR-V)</button>
+        </div>
+
+        <div class="grid-3">
+            <div class="card vehicle-card" data-category="sedan">
+                <div class="card-img-wrap">
+                    <span class="card-tag">Flagship Sedan</span>
+                    <img src="images/car1.jpg" alt="2026 Honda Civic RS">
+                </div>
+                <h3>2026 Honda Civic RS</h3>
+                <div class="price">PKR 1.01 Crore</div>
+                <p>176 HP VTEC Turbo, Honda Sensing, Wireless Apple CarPlay, dual-zone climate control, and sport paddle shifters.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda Civic RS', 'PKR 1.01 Crore')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card vehicle-card" data-category="suv">
+                <div class="card-img-wrap">
+                    <span class="card-tag">e:HEV Hybrid</span>
+                    <img src="images/car2.jpg" alt="2026 Honda HR-V e:HEV">
+                </div>
+                <h3>2026 Honda HR-V e:HEV</h3>
+                <div class="price">PKR 92.99 Lacs</div>
+                <p>Next-gen two-motor hybrid system delivering 21.5 km/l city efficiency, Magic Seats, and panoramic styling.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda HR-V e:HEV', 'PKR 92.99 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card vehicle-card" data-category="sedan">
+                <div class="card-img-wrap">
+                    <span class="card-tag">Executive Sedan</span>
+                    <img src="images/car3.jpg" alt="2026 Honda City Aspire S">
+                </div>
+                <h3>2026 Honda City Aspire S</h3>
+                <div class="price">PKR 61.49 Lacs</div>
+                <p>1.5L i-VTEC CVT automatic with leatherette interior, rear AC vents, push-start smart entry, and alloy rims.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda City Aspire S', 'PKR 61.49 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card vehicle-card" data-category="suv">
+                <div class="card-img-wrap">
+                    <span class="card-tag">7-Seater Family</span>
+                    <img src="images/car2.jpg" alt="2026 Honda BR-V i-VTEC S">
+                </div>
+                <h3>2026 Honda BR-V i-VTEC S</h3>
+                <div class="price">PKR 64.29 Lacs</div>
+                <p>Versatile 7-seater family SUV with 201mm ground clearance, roof-mounted rear AC, and 1.5L i-VTEC reliability.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda BR-V i-VTEC S', 'PKR 64.29 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card vehicle-card" data-category="sedan">
+                <div class="card-img-wrap">
+                    <span class="card-tag">1.5L Turbo</span>
+                    <img src="images/car1.jpg" alt="2026 Honda Civic Oriel">
+                </div>
+                <h3>2026 Honda Civic Oriel</h3>
+                <div class="price">PKR 88.34 Lacs</div>
+                <p>Refined 1.5L VTEC Turbo executive sedan featuring electric sunroof, 7-inch TFT cluster, and walk-away auto lock.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda Civic Oriel', 'PKR 88.34 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+
+            <div class="card vehicle-card" data-category="suv">
+                <div class="card-img-wrap">
+                    <span class="card-tag">Special Offer</span>
+                    <img src="images/car3.jpg" alt="2026 Honda HR-V VTi-S">
+                </div>
+                <h3>2026 Honda HR-V VTi-S</h3>
+                <div class="price">PKR 72.99 Lacs</div>
+                <p>1.5L DOHC i-VTEC compact crossover SUV with sequential LED turn signals, wireless charger, and 4 airbags.</p>
+                <div class="card-btn-group">
+                    <button class="btn-primary" onclick="openBuyModal('2026 Honda HR-V VTi-S', 'PKR 72.99 Lacs')">Buy Now</button>
+                    <a href="contact.html" target="_blank" rel="noopener" class="btn-outline">Book Drive ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-backdrop" id="buyModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeBuyModal()">×</button>
+            <div class="luxury-badge" style="margin-bottom: 12px;">Honda Priority Booking</div>
+            <h3 id="modalCarName" style="font-size: 1.45rem; margin-bottom: 4px;">Honda Model</h3>
+            <p id="modalCarPrice" style="color: var(--accent); font-weight: 800; margin-bottom: 20px;">PKR 0</p>
+            <form id="buyForm" onsubmit="confirmPurchase(event)">
+                <div class="form-group">
+                    <label for="buyerName">Customer Full Name</label>
+                    <input type="text" id="buyerName" placeholder="Ikrash" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyerPhone">Phone / WhatsApp Number</label>
+                    <input type="tel" id="buyerPhone" placeholder="+92 300 1234567" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Confirm Honda Buy Now Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Honda Lineup</a>
+            <a href="faqs.html" target="_blank" rel="noopener">FAQs (New Tab)</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact Concierge (New Tab)</a>
+            <a href="login.html">VIP Login</a>
+        </div>
+        <p>© 2026 Auto Haven | Exclusive Honda Dealership • Crafted by Ikrash (i263170 - SE D)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
